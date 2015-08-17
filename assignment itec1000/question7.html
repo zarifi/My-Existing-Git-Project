@@ -1,0 +1,54 @@
+<html>
+	<head>
+	<body>
+		<p>7.Using the minimum required number of bits in 2's complement notation,solve 10-7=X, by preserving addition.Show the process for deriving the final decimal number.[5 marks]</p>
+		<p>1.+10=01010 and +7=00111<br/>so the minimum required number of bits are 5 bits.</p>
+		<p>2.+7=00111 so the 2's complement of decimal +7 according to method 2 of finding 2's complement is 11001,in other words -7=11001 in 5 number of bits.</p>
+		<table>
+			<tr>
+				<td style="color:blue">1</td>
+				<td style="color:blue">1</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>	
+			<tr>
+				<td></td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+			</tr>	
+			<tr>
+				<td><strong>+</strong></td>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td style="color:red">1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>		
+		</table>	
+		<p>The red digit(1) is cuased by overflow,so we truncate it.Hence the final binary number is 00011 and considering the most significant bit is 0 which means the number is positive in decimal system.converting from binary to decimal 1*1+1*2=3 so the final decimal answer is +3.</p>
+
+
+	</body>
+	</head>
+</html>

@@ -1,0 +1,9 @@
+<html>
+	<head>
+	<body>
+		<p>9. On average, a typical page of text holds roughly 2000 characters.  Approximately how many pages of Unicode text can a storage media with 1 Gigabyte of free space hold?  Show the process of unit conversions and calculation required. [5 marks]</P>
+		<P>The standard Unicode is defined as 16-bit code.so each character needs at most 16 bits too be represented,<br/>number of bits for 2000 characters:2000*16=32000=32KB<br/>1GB=1024MB ,1MB=1024KB <br/>so 1GB=1048576 , 1048576/32=32768 so approximately 32768 pages of Unicode text can be stored in 1 Gigabyte of free space.</p>
+
+	</body>
+	</head>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<title>A1 Solutions ITEC1000 N Mohammad Hossein Zarifi</title>
+</head>
+<body>
+<h1 align="center">Questions and their solutions </h1>
+<hr/>
+<p>You can see the questions in order in the list below</p>
+
+
+<ol>
+	  <li>Complete the chart below as per the Decimal sample (in blue)provided.[8 marks]</li>
+	  <li>Convert the 8-bit number 11101101 to Decimal by completing the chart below.[6 marks]</li>
+	  <li>Convert the binary number 111100011100111110 to the base system number indicated using the grouping method discussed in class. 
+	Explain your strategies for each conversion.[12 marks]
+</li>
+	  <li>Convert the binary 0.1010001 to Base 10 fraction;show your work indicating the values in play;do not convert using a calculator.[2 marks]</li>
+	  <li>Convert the binary number 11010.101 to Base 10;show your work indicating the values in play;do not convert using a calculator.[2 marks]</li>
+	  <li>Add the binary numbers; show your work indicating the appropriate carry values.  Tip:  You could use a non-proportional font e.g., Courier New, to line up columns instead of a defined table and display the carry values in a different color.[4 marks]</li>
+	  <li>Using the minimum required number of bits in 2's complement notation,solve 10-7=X, by preserving addition.Show the process for deriving the final decimal number.[5 marks]</li>
+	  <li>Refer to page 102 of the Englander text 4th edition and decode Hex message below.[5 marks]</li>
+	  <li>On average, a typical page of text holds roughly 2000 characters.  Approximately how many pages of Unicode text can a storage media with 1 Gigabyte of free space hold?  Show the process of unit conversions and calculation required.[5 marks]</li>
+	  <li>Use the Web as a resource to investigate MPEG-2 and summarize what it does and how it does it in your own words; link and cite the resource site(s) appropriately.  [5 marks]</li>
+	  <li>Complete the table below with appropriate information.[6 marks]</li> 
+</ol>
+<hr/>
+<p>1. Complete the chart below as per the Decimal sample (in blue)provided.[8 marks]</p>
+	<table border="1" width="60%">
+		<tr>
+			<td colspan="2"></td>
+			<th colspan="5">Position/Exponent</th>
+		</tr>
+		<tr>
+			<th>System</th>
+			<th>Base</th>
+			<th></th>
+			<th>3</th>
+			<th>2</th>
+			<th>1</th>
+			<th>0</th>
+		</tr>
+		<tr>
+			<td>Decimal</td>
+			<td style="color:blue;">10</td>
+			<td>Place</td>
+			<td style="color:blue;">10<sup>3</sup></td>
+			<td style="color:blue;">10<sup>2</sup></td>
+			<td style="color:blue;">10<sup>1</sup></td>
+			<td style="color:blue;">10<sup>0</sup></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td>Value</td>
+			<td>1000</td>
+			<td>100</td>
+			<td>10</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td colspan="7"></td>
+		<tr>
+			<td>Binary</td>
+			<td>2</td>
+			<td>Place</td>
+			<td>2<sup>3</sup></td>
+			<td>2<sup>2</sup></td>
+			<td>2<sup>1</sup></td>
+			<td>2<sup>0</sup></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td>Value</td>
+			<td>8</td>
+			<td>4</td>
+			<td>2</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td colspan="7"></td>
+		</tr>
+		<tr>
+			<td>Quaternary</td>
+			<td>4</td>
+			<td>Place</td>
+			<td>4<sup>3</sup></td>
+			<td>4<sup>2</sup></td>
+			<td>4<sup>1</sup></td>
+			<td>4<sup>0</sup></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td>Value</td>
+			<td>64</td>
+			<td>16</td>
+			<td>4</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td colspan="7"></td>
+		</tr>
+		<tr>
+			<td>Octal</td>
+			<td>8</td>
+			<td>Place</td>
+			<td>8<sup>3</sup></td>
+			<td>8<sup>2</sup></td>
+			<td>8<sup>1</sup></td>
+			<td>8<sup>0</sup></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td>Value</td>
+			<td>512</td>
+			<td>64</td>
+			<td>8</td>
+			<td>1</td>
+		</tr>	
+		<tr>
+			<td colspan="7"></td>
+		</tr>
+		<tr>
+			<td>Hexadecimal</td>
+			<td>16</td>
+			<td>Place</td>
+			<td>16<sup>3</sup></td>
+			<td>16<sup>2</sup></td>
+			<td>16<sup>1</sup></td>
+			<td>16<sup>0</sup></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td>Value</td>
+			<td>4096</td>
+			<td>256</td>
+			<td>16</td>
+			<td>1</td>
+		</tr>	
+		
+		</table>
+		<hr/>
+
+
+
+	<p>2.Convert the 8-bit number 11101101 to Decimal by completing the chart below.[6 marks]</p>
+	<table border="1" width="60%">
+		<tr>
+			<td colspan="3"></td>
+			<th colspan="8">Position/Exponent</th>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+			<th>7</th>
+			<th>6</th>
+			<th>5</th>
+			<th>4</th>
+			<th>3</th>
+			<th>2</th>
+			<th>1</th>
+			<th>0</th>
+        </tr>
+        <tr>
+			<td colspan="3">Value</td>
+			<td>128</td>
+			<td>64</td>
+			<td>32</td>
+			<td>16</td>
+			<td>8</td>
+			<td>4</td>
+			<td>2</td>
+			<td>1</td>
+        </tr>
+        <tr>
+			<td colspan="3">Binary#</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+        </tr>
+        <tr>
+			<td colspan="3">Evaluate</td>
+			<td>128</td>
+			<td>64</td>
+			<td>32</td>
+			<td>0</td>
+			<td>8</td>
+			<td>4</td>
+			<td>0</td>
+			<td>1</td>
+        </tr><tr>
+			<td colspan="3">Sum</td>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+        </tr>
+    </table>	
+    <p>11101101<sub>2</sub>=237<sub>10</sub></p>
+    <p>128+64+32+0+8+4+0+1=237  <br/>so the binary number 11101101 is equal to 237 in decimal.</p>
+    <hr/>
+
+<p>3. Convert the binary number 111100011100111110 to the base system number indicated using the grouping method discussed in class. 
+	Explain your strategies for each conversion. [12 marks]</p>
+
+	<p><span style="font-weight:900">Qaternary:</span>The largest number that can be represented by each bit in quaternary system number is 3.Also the number 3 can be represented by two digits in binary system number(11).so we have to divide the binary number(111100011100111110) into groups of number with two digits and convert each two digits in binary to a number in quaternary.</p>
+	
+	<p><span style="font-weight:900">Octal:</span>The largest number that can be represented by each bit in octal system number is 7.Also the number 7 can be represented by three digits in binary system number(111).so we have to divide the binary number (111100011100111110)into groups of number with three digits and convert each three digits in binary to a number in octal.</p>
+
+	<p><span style="font-weight:900">Hexadecimal:</span>The largest number that can be represented by each bit in hexadecimal system number is 15(F).Also the number 15 can be represented by four digits in binary system number(1111).so we have to divide the binary number (111100011100111110)into groups of number with four digits and convert each four digits in binary to a number in hexadecimal.</p>
+
+	<table border="1" width="60%">
+		<tr>
+			<td width="20%">System</td>
+			<td width="50%">Grouping</td>
+			<td width="30%">Result</td>
+		</tr>
+		<tr>
+			<td width="20%">Quaternary</td>
+			<td width="50%">11,11.00,01,11,00,11,11,10</td>
+			<td width="30%">330130332</td>
+		</tr>
+		<tr>
+			<td width="20%">Octal</td>
+			<td width="50%">111,100,011,100,111,110</td>
+			<td width="30%">743476</td>
+		</tr>	
+	    <tr>
+			<td width="20%">Hexadecimal</td>
+			<td width="50%">0011,1100,0111,0011,1110</td>
+			<td width="30%">3C73E</td>
+		</tr>
+	
+	</table>
+	<hr/>
+
+ <p>4.Convert the binary 0.1010001 to Base 10 fraction;show your work indicating the values in play;do not convert using a calculator.[2 marks]</p>
+
+		<p>64/128+16/128+1/128=81/128=0.6328125</p>
+		<p>so the 0.1010001 in binary=0.6328125 in base 10</p>
+
+    <hr/>
+
+<p>5.Convert the binary number 11010.101 to Base 10;show your work indicating the values in play;do not convert using a calculator.[2 marks]
+
+			<p>For integer part:1*16+1*8+0*4+1*2+0*1=26</p>
+			<p>For fraction part:1*4/8+1*1/8=5/8=0.625</p>
+			<p>so the binary number 11010.101 equals to 26.625 in base 10.</p>
+
+            
+			<hr/>
+
+			<p>6.  Add the binary numbers; show your work indicating the appropriate carry values.  Tip:  You could use a non-proportional font e.g., Courier New, to line up columns instead of a defined table and display the carry values in a different color. [4 marks]</p>
+			<table width="10%">
+				<tr>
+					<td style="color:red"></td>
+					<td style="color:red">1</td>
+					<td style="color:red">1</td>
+					<td style="color:red"></td>
+					<td style="color:red"></td>
+					<td style="color:red"></td>
+				</tr>
+				<tr>
+					<td style="color:red">1</td>
+					<td style="color:red">1</td>
+					<td style="color:red">1</td>
+					<td style="color:red">1</td>
+					<td style="color:red">1</td>
+					<td style="color:red"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>1</td>
+					<td>0</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td><strong>+</strong></td>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>0</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>_</td>
+					<td>_</td>
+					<td>_</td>
+					<td>_</td>
+					<td>_</td>
+					<td>_</td>
+				</tr>
+				<tr>
+					<td style="color:blue">1</td>
+					<td style="color:blue">0</td>
+					<td style="color:blue">0</td>
+					<td style="color:blue">0</td>
+					<td style="color:blue">0</td>
+					<td style="color:blue">1</td>
+				</tr>
+			</table>
+			<hr/>
+
+			<p>7.Using the minimum required number of bits in 2's complement notation,solve 10-7=X, by preserving addition.Show the process for deriving the final decimal number.[5 marks]</p>
+		<p>1.+10=01010 and +7=00111<br/>so the minimum required number of bits are 5 bits.</p>
+		<p>2.+7=00111 so the 2's complement of decimal +7 according to method 2 of finding 2's complement is 11001,in other words -7=11001 in 5 number of bits.</p>
+		<table>
+			<tr>
+				<td style="color:blue">1</td>
+				<td style="color:blue">1</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>	
+			<tr>
+				<td></td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+			</tr>	
+			<tr>
+				<td><strong>+</strong></td>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td style="color:red">1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>		
+		</table>	
+		<p>The red digit(1) is caused by overflow,so we truncate it.Hence the final binary number is 00011 and considering the most significant bit is 0 which means the number is positive in decimal system.converting from binary to decimal 1*1+1*2=3 so the final decimal answer is +3.</p>
+
+		<hr/>
+
+
+        <p>8.Refer to page 102 of the Englander text 4th edition and decode Hex message below.[5 marks]</p>
+		<p>We have to divide the code into groups of two characters</P>
+		<P>54=T , 68=h , 69=i , 73=s , 20=space , 49=I , 73=s , 20=space , 53=S , 69=i , 6D=m , 70=p , 6C=l , 65=e , 21=!</p>
+		<p>Therefore the message is: This Is Simple!</p>	
+	
+        <hr/>
+	
+
+        <p>9. On average, a typical page of text holds roughly 2000 characters.  Approximately how many pages of Unicode text can a storage media with 1 Gigabyte of free space hold?  Show the process of unit conversions and calculation required. [5 marks]</P>
+		<P>The standard Unicode is defined as 16-bit code.so each character needs at most 16 bits too be represented, number of bits for 2000 characters:2000*16=32000=32KB  1GB=1024MB ,1MB=1024KB so 1GB=1048576 , 1048576/32=32768 so approximately 32768 pages of Unicode text can be stored in 1 Gigabyte of free space.</p>
+
+
+		<hr/>
+		
+		<p>10.  Use the Web as a resource to investigate MPEG-2 and summarize what it does and how it does it in your own words; link and cite the resource site(s) appropriately.  [5 marks]</p>
+		<p>MPEG-2 is a data compression algorithm  which uses two compression methods lossless and lossy simultaneously to achieve compression ratios of 100:1 or more.The quality of image is mostly preserved in MPEG-2 coding.MPEG-2 coding is widely used in transferring video and audio data through satellite and cable.Moreover,high percentage of movies and data images are stored on DVD and other storage device in this format.</p>
+		<p>Resources:The Architecture of Computer Hardware,Sustem Software and Networking by IRV ENGLANDER.</p>
+		<p>Website Resources:</p>
+		<a href="http://en.wikipedia.org/wiki/MPEG-2">Wikipedia</a>
+
+
+	<hr/>
+<p>11.  Complete the table below with appropriate information.  [6 marks]</p>
+<table border="1">
+			<tr>
+				<th>Property</th>
+				<td>GIF</td>
+				<td>PNG</td>
+				<td>JPEG</td>
+			</tr>	
+			<tr>
+				<td>Type of image</td>
+				<td align="center"><img src="http://www.students.yorku.ca/~zarifi/itec1000n/images/mind-wraping.gif" alt="mind-wraping" width="300px" height="100px" title="GIF Image Sample"></td>
+				<td align="center"><img src="http://www.students.yorku.ca/~zarifi/itec1000n/images/munsel.png" alt="munsel" width="200px" height="100px"></td>
+				<td align="center"><img src="http://www.students.yorku.ca/~zarifi/itec1000n/images/yellow-forest.jpeg" alt="munsel" width="300px" height="100px"/></td>
+			</tr>	
+			<tr>
+				<td>Compression</td>
+				<td>GIF uses LZW(Lempel-Ziv-Welch)lossless data compression</td>
+				<td>lossless data compression consist of two stages:1.pre-compression(filtering) 2.compression(DEFLATE)</td>
+				<td>lossy compression</td>
+			</tr>
+			<tr>
+				<td>File size</td>
+				<td>Supports 8 bits per pixel for each image</td>
+				<td>24 bits and 48 bits per pixel and when alpha channel is added up to 64 bits per pixel</td>
+				<td>8 bits per pixel</td>
+			</tr>	
+			<tr>
+				<td>Color Capability</td>
+				<td>256 color chosen from 24-bit RGB color space</td>
+				<td>supports 256T colors</td>
+				<td>more than 16 million colors</td>
+			</tr>		
+			<tr>
+				<td>Particular strengths and weakness</td>
+				<td>Strengths:GIF is suitable for sharp-edged line such as logos and simple drawing.Weaknesss:GIF format is limited to 256 colors which is insufficient to display the details of photograph.</td>
+				<td>Strength:PNG was designed for transferring images on the Internet.Weakness:It was not designed for  professional-quality print graphics and therefore does not support non-RGB color spaces such as CMYK.</td>
+				<td>Strengths:The JPEG compression algorithm is at its best on photographs and paintings of realistic scenes with smooth variations of tone and color.Weakness:JPEG may not be as well suited for line drawings and other textual or iconic graphics, where the sharp contrasts between adjacent pixels can cause noticeable artifacts.JPEG is also not well suited to files that will undergo multiple edits, as some image quality will usually be lost each time the image is decompressed and recompressed, particularly if the image is cropped or shifted, or if encoding parameters are changed.</td>
+			</tr>		
+		</table>	
+
+
+			<a href="../a1">Click here to go to main page</a>
+
+			<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-html40" alt="Valid HTML 4.0 Transitional" height="31" width="88"></a>
+  </p>
+
+
+</body>
+</html>
+ 
